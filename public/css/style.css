@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+}
+
+/* global style */
+.page-dashboard{
+    min-height: 100vh;
+}
+
+.wrapper{
+    min-height: 100vh;
+}
+
+.content-wrapper{
+    background-color: #F4F5F7;
+    min-height: 100vh;
+    width: 100%;
+    margin-left: 24%;
+    transition: all 0.5s ease;
+}
+
+.content-wrapper.toggle{
+    margin-left: 6.5%;
+}
+
+.main-content{
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 110px);
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+.btn-blue{
+    color: #ffffff;
+    background-color: #0D28A6;
+}
+
+.btn-blue:hover{
+    color: #ffffff;
+    background-color: #0b218d;
+}
+
+.btn-outline-blue{
+    border: 1px solid #0D28A6;
+    color: #0D28A6;
+}
+
+.btn-outline-blue:hover{
+    background-color: rgba(13, 40, 166, .15);
+}
+
+.btn-delete{
+    color: #FA2C5A;
+    border: 1px solid #FA2C5A;
+}
+
+.btn-delete:hover{
+    color: #FA2C5A;
+    background-color: rgba(250, 44, 90, .15);
+}
+
+.btn-update{
+    color: #ffffff;
+    background-color: #5CB85F;
+}
+
+.btn-update:hover{
+    color: #ffffff;
+    background-color: #47a34a;
+}
+
+.list-group{
+    background-color: transparent;
+}
+
+.list-group-item{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.nav-link{
+    color: #AEB7E1;
+    border: 1px solid #AEB7E1 !important;
+    margin-right: 15px;
+}
+
+.nav-link:hover{
+    color: #0D28A6 !important;
+    background-color: #CFD4ED !important;
+    border: 1px solid #0D28A6;
+}
+
+.nav-link.active{
+    color: #0D28A6 !important;
+    background-color: #CFD4ED !important;
+    border: 1px solid #0D28A6;
+}
+
+input[type=file]::file-selector-button {
+    display: none;
+}
+
+input[type=file]{
+    position: relative;
+}
+
+input[type=file]::before {
+    content: url(../icons/fi_upload.png);
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    right: 15px;
+}
+
+.alert-notif{
+    position: fixed;
+    width: 40%;
+    left: 550px;
+    background-color: #5CB85F;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Sidebar Style */
+.sidebar-wrapper{
+    width: 25%;
+    position: fixed;
+}
+
+.sidebar{
+    background-color: #0D28A6;
+    min-height: 100vh;
+    width: 25%;
+}
+
+.sidebar-brand{
+    background-color: #CFD4ED;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 25px;
+}
+
+.sidebar-link{
+    color: #ffffff;
+    font-size: .8rem;
+    font-weight: 300;
+    text-decoration: none;
+    padding:10px;
+    display: block;
+    text-align: center;  
+}
+
+.sidebar-link:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sidebar-link.active{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-weight: bold;
+}
+
+.sidebar-link:hover{
+    color: #ffffff;
+}
+
+.sidebar-link-text{
+    margin: 0;
+}
+
+/* Sidebar Collapse */
+.sidebar-collapse{
+    background-color: #ffffff;
+    width: 70%;
+    min-height: 100vh;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.sidebar-collapse.toggle{
+    margin-left: -70%;
+}
+
+.sidebar-collapse-brand{
+    background-color: #CFD4ED;
+    width: 120px;
+    height: 40px;
+    margin: 22px 0 0 25px;
+}
+
+.sidebar-collapse-group{
+    margin-top: 35px;
+}
+
+.sidebar-collapse-link{
+    color: #8A8A8A;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 0 12px 15px;
+    margin-bottom: 13px;
+}
+
+.sidebar-collapse-link:hover{
+    color: #000000;
+    background-color: #CFD4ED;
+}
+
+.sidebar-collapse-link.active{
+    color: #000000;
+    background-color: #CFD4ED;
+}
+
+/* Top bar */
+.topbar{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+/* Main Content Header Style */
+/* Breadcrumb Style */
+.breadcrumb-item a{
+    color: #000000 !important;
+    text-decoration: none;
+}
+
+/* Header Title */
+.main-content-header-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+
+/* Main Content Body Style */
+.main-content-body{
+    margin-left: 15px;
+}
+
+.main-content-body-title{
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.main-content-body-price{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.main-content-body-time{
+    font-size: .8rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+/* Form Style */
+.form-btn-group{
+    position: absolute;
+    bottom: 30px;
+}
+
+/* Modal Delete */
+.modal-delete{
+    width: 30%;
+    transform: translate(calc(100% + 15%), 0);
+}
+
+.modal-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.modal-text{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.modal-btn{
+    width: 100px;
+}
